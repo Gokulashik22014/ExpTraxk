@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  @apply bg-bgblack bg-gradient-to-b from-light-black to-black;
+}
+.background{
+  @apply bg-bgblack h-screen bg-gradient-to-b from-light-black to-black;
+}
+.toggle_button{
+  @apply uppercase w-1/2 h-10 rounded-full transition ease-in-out duration-500;
+}
+.active{
+  @apply bg-slate-900 text-white transition ease-in-out duration-300;
+}
+.trans{
+  @apply transition ease-in-out duration-300;
+}
+.bg-black{
+  background-color: #414141;
+}
+.bg-zinc {
+  background-color: #71717a; /* example color */
+}
+
+.bg-blue {
+  background-color: #3b82f6;
+}
+
+.bg-indigo {
+  background-color: #6366f1;
+}
+
+.bg-yellow {
+  background-color: #f59e0b;
+}
+.bg-violet{
+  background-color: #7e22ce;
+}
+.bg-green{
+  background-color: #15803d;
+}
+select {
+	appearance: none;
+}
+textarea:focus, input:focus,select:focus{
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track (the area behind the thumb) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+  border-radius: 10px;
+}
+
+/* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the thumb */
+  border-radius: 10px; /* Roundness of the thumb */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the thumb on hover */
+}
